@@ -17,5 +17,8 @@ Copy the `toolchain` directory anywhere you like, no installation is required.
 
 ## Example
 
-`example.bat` is a minimal example script that compiles and uploads the program in `example.c` to an ATmega2560 microcontroller, and listens for serial output.
-`cd` to the repository root and run `example.bat COM5` (replace `COM5` with whichever port your microcontroller is connected with), to run the example.
+`toolchain.bat` will prepend the toolchain to your PATH variable.
+
+`example.bat` is a minimal example script that compiles and uploads the `example.c` program to an ATmega2560 microcontroller, and listens for serial output.
+
+Run `set port=COM5 && example.bat build flash listen` (replace `COM5` with whichever port your microcontroller is connected with), to run the example.
